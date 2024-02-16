@@ -12,9 +12,11 @@ M.treesitter = {
     "c",
     "markdown",
     "markdown_inline",
+    'dart'
   },
   indent = {
     enable = true,
+    disable = {'dart'}
     -- disable = {
     --   "python"
     -- },
@@ -54,6 +56,10 @@ M.nvimtree = {
       },
     },
   },
+}
+
+M.telescope = {
+  extensions_list = {'flutter'},
 }
 
 return M
